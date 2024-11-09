@@ -35,10 +35,10 @@ const Useeffect = () => {
 
   return (
     <div className=" grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 lg:grid-cols-2 ">
-      <div className=" w-[75%] mx-auto xl:hidden lg:hidden md:hidden">
+      <div className=" w-[81%] mx-auto xl:hidden lg:hidden md:hidden">
         <div className="">
           <img
-            className="  xl:w-[88%]  xl:m-auto md:mt-12 md:w-[100%]"
+            className="xl:w-[88%]  xl:m-auto md:mt-12 md:w-[100%]"
             src="https://img.freepik.com/premium-vector/vector-stopwatch-timer-cartoon-icon_300636-2773.jpg"
             alt=""
           />
@@ -59,7 +59,7 @@ const Useeffect = () => {
             {hour < 9 ? `0${hour}` : hour}: {min < 9 ? `0${min}` : min}:{" "}
             {sec < 9 ? `0${sec}` : sec}
           </div>
-          <div className=" flex justify-evenly mt-8">
+          <div className="-mx-3 flex justify-evenly mt-8">
             <button onClick={() => setISRunning(true)} className="pushable ">
               <span className="shadow1"></span>
               <span className="edge1"></span>
