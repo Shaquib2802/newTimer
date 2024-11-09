@@ -34,20 +34,32 @@ const Useeffect = () => {
   });
 
   return (
-    <div className="grid grid-cols-2">
-      <div className="bg-purple-50 w-screen h-screen border-2 border-black shadow-2xl">
-        <div className="text-6xl font-semibold mt-16 mx-44">Stopwatch</div>
-        <div className="flex flex-col w-[25%] h-[40%] mx-44 my-10 bg-white shadow-2xl">
-          <div className="flex mt-6 justify-center gap-x-2">
+    <div className=" grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 lg:grid-cols-2 ">
+      <div className=" w-[50%] mx-auto xl:hidden lg:hidden md:hidden">
+        <div className="">
+          <img
+            className="  xl:w-[88%]  xl:m-auto md:mt-12 md:w-[100%]"
+            src="https://img.freepik.com/premium-vector/vector-stopwatch-timer-cartoon-icon_300636-2773.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="bg-purple-50 w-screen  md:border-2 border-black shadow-2xl">
+        <div className="mx-40  w-[50%] text-xl mt-3   xl:mx-40 xl:text-6xl xl:mt-10 font-semibold md:mx-20 md:mt-14 md:text-5xl  ">
+          Stopwatch
+        </div>
+        <div className="flex flex-col mx-auto mt-2 w-[45%] h-[40%] xl:mx-32 xl:my-16  bg-white shadow-2xl lg:w-[30%] md:mx-16 md:mt-8 md:w-[35%]">
+          <div className="flex mt-2 justify-center gap-x-2 md:mt-4">
             <div>
-              <MdOutlineTimer className="text-blue-400 mt-1 text-xl" />
+              <MdOutlineTimer className="text-blue-400 mt-1  xl:text-3xl" />
             </div>
-            <div className="text-base font-semibold">Timer</div>
+            <div className="text-base font-semibold xl:text-2xl">Timer</div>
           </div>
-          <div className="text-center mt-3 text-7xl">
-            {hour < 9 ? `0${hour}` : hour}:   {min < 9 ? `0${min}` : min}:   {sec < 9 ? `0${sec}` : sec}
+          <div className="text-center mt-2 text-xl xl:text-7xl md:text-5xl md:mt-2">
+            {hour < 9 ? `0${hour}` : hour}: {min < 9 ? `0${min}` : min}:{" "}
+            {sec < 9 ? `0${sec}` : sec}
           </div>
-          <div className="flex justify-evenly mt-8">
+          <div className="flex justify-evenly mt-5">
             <button onClick={() => setISRunning(true)} className="pushable ">
               <span className="shadow1"></span>
               <span className="edge1"></span>
@@ -71,10 +83,10 @@ const Useeffect = () => {
       <button onClick={() => setISRunning(false)}>Stop</button>
       <button onClick={handleReset}>Reset</button> */}
       </div>
-      <div className="border-2 shadow-2xl border-black flex bg-white ">
+      <div className="xl:border-2 shadow-2xl xl:border-black flex bg-white hidden md:block md:border-2 border-black">
         <div>
           <img
-            className="w-[85%] m-auto"
+            className="  xl:w-[88%]  xl:m-auto md:mt-12 md:w-[100%]"
             src="https://img.freepik.com/premium-vector/vector-stopwatch-timer-cartoon-icon_300636-2773.jpg"
             alt=""
           />
