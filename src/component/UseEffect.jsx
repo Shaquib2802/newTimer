@@ -34,7 +34,7 @@ const Useeffect = () => {
   });
 
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 lg:grid-cols-2 ">
+    <div className=" grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 lg:grid-cols-2  overflow-hidden">
       <div className=" w-[81%] mx-auto xl:hidden lg:hidden md:hidden">
         <div className="">
           <img
